@@ -29,14 +29,7 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
   And run 'tools/check' *before* committing to make sure that changes are good.
 -->
 
-<!--
-  EVENTBRITE
 
-  This block includes the Eventbrite registration widget if
-  'eventbrite' has been set in the header.  You can delete it if you
-  are not using Eventbrite, or leave it in, since it will not be
-  displayed if the 'eventbrite' field in the header is not set.
--->
 {% if page.eventbrite %}
 <iframe
   src="https://www.eventbrite.com/tickets-external?eid={{page.eventbrite}}&ref=etckt"
@@ -46,11 +39,6 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
   scrolling="auto">
 </iframe>
 {% endif %}
-
-<h4>This is the workshop template.  Use it to create your own website.
-Delete these lines and please fill in 
-<a href="{{site.amy_site}}/submit">this self-organized workshop form</a>
-and the administrator will contact you if we need any extra information.</h4>
 
 <h2 id="general">General Information</h2>
 
@@ -197,12 +185,6 @@ and the administrator will contact you if we need any extra information.</h4>
   2' to be actual dates or days of the week.
 -->
 <h2 id="schedule">Schedule</h2>
-
-<!-- DO NOT EDIT SURVEY LINKS -->
-<p><em>Surveys</em></p>
-<p>Please be sure to complete these surveys before and after the workshop.</p>
-<p><a href="{{ site.pre_survey }}{{ site.github.project_title }}">Pre-workshop Survey</a></p>
-<p><a href="{{ site.post_survey }}{{ site.github.project_title }}">Post-workshop Survey</a></p>
 
  <div class="row">
   <div class="col-md-6">
